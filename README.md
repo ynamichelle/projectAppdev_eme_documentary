@@ -40,7 +40,6 @@ The user interface uses the official municipal palette—Forest/Emerald Green an
 * **Backend:** Laravel (PHP), Eloquent ORM
 * **Inertia.js / API Layer:** Inertia.js for server-driven single-page architecture and Laravel Sanctum for session/token authorization
 * **Database:** MySQL / MariaDB
-* **Mobile Prototype:** FlutterFlow (demo for client presentation)
 * **Development Model:** Incremental Development Model
 
 ```text
