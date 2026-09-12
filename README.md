@@ -231,6 +231,7 @@ php artisan migrate --seed
 Start local development servers:
 
 Bash
+
 Terminal 1: Backend
 php artisan serve
 
