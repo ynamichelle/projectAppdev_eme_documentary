@@ -1,6 +1,6 @@
 # projectAppdev_eme_documentary
 
-Municipal Civil Registry Information System (MCRIS)
+Advanced-Local-Civil-Registration-Infromation-System (ALCRIS)
 An automated web-based civil registry application designed to streamline vital statistics management—specifically Birth and Death Registrations—featuring a role-based approval pipeline between Registry Staff and System Administrators.  
 
 1. System Overview
