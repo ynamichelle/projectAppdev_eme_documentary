@@ -52,14 +52,14 @@ The user interface uses the official municipal palette—Forest/Emerald Green an
                           │ HTTP / Inertia Props & Forms
 ┌─────────────────────────▼──────────────────────────────┐
 │                    Laravel Backend                     │
-│  - Role Middleware (Admin vs. Staff)[cite: 1]         │
+│  - Role Middleware (Admin vs. Staff)[cite: 1]          │
 │  - BirthRecordController & DeathRecordController       │
-│  - Sanctum Session & Auth Handler[cite: 1]            │
+│  - Sanctum Session & Auth Handler[cite: 1]             │
 └─────────────────────────▲──────────────────────────────┘
                           │ Eloquent ORM
 ┌─────────────────────────▼──────────────────────────────┐
 │                    MySQL Database                      │
-│  - users (roles: admin, staff)[cite: 1]               │
+│  - users (roles: admin, staff)[cite: 1]                │
 │  - birth_records (tracking_id, type, status, feedback) │
 │  - death_records (tracking_id, cause, status, etc.)    │
 └────────────────────────────────────────────────────────┘
