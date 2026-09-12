@@ -213,11 +213,17 @@ Configure database variables in .env:
 
 Code snippet
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=alcris_db
+
 DB_USERNAME=root
+
 DB_PASSWORD=
+
 Run database migrations and seeders:
 
 Bash
@@ -225,8 +231,8 @@ php artisan migrate --seed
 Start local development servers:
 
 Bash
-# Terminal 1: Backend
+Terminal 1: Backend
 php artisan serve
 
-# Terminal 2: Vite Frontend
+Terminal 2: Vite Frontend
 npm run dev
