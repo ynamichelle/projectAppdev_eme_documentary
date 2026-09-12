@@ -1,6 +1,6 @@
 # projectAppdev_eme_documentary
 
-Advanced-Local-Civil-Registration-Infromation-System (ALCRIS)
+# Advanced-Local-Civil-Registration-Infromation-System (ALCRIS)
 
 An automated web-based civil registry application designed to streamline vital statistics management—specifically Birth and Death Registrations—featuring a role-based approval pipeline between Registry Staff and System Administrators.  
 
@@ -44,6 +44,7 @@ Development Model: Incremental Development Model.
 │  - birth_records (tracking_id, type, status, feedback) │
 │  - death_records (tracking_id, cause, status, etc.)    │
 └────────────────────────────────────────────────────────┘
+
 3. Core Modules & Permissions
 Role-Based Access Control (RBAC)
 Admin: Full CRUD privileges over all registrations, account creation/management for staff members, approval/rejection decision engine, and system audit monitoring.  
@@ -57,6 +58,7 @@ Every document moves through a 4-step state machine:
                                                 ▲                │
                                                 └── [ Rejected ] ◄
                                                   (Needs Revision)
+                                                  
 Draft: Saved work-in-progress, editable by the creator.  
 
 Pending Approval: Submitted to the Admin review queue; locked for staff editing.  
@@ -107,6 +109,7 @@ admin_feedback	TEXT	Nullable
 Administrative remarks on rejection  
 
 created_at / updated_at	TIMESTAMP	Default current timestamp	Audit timestamps
+
 5. Development Increments & Milestones
 Increment 1: Authentication & User Accounts
 
@@ -167,7 +170,7 @@ Perform code review and resolve merge conflicts prior to merging into dev.
 
 After completing an entire increment, the Lead/Admin creates a PR from dev to main.  
 
-Task Management (Trello Board)
+# Task Management (Trello Board)
 Backlog: Master backlog of system features and upcoming registry document types.  
 
 To Do: Sprint-specific components (e.g., "Implement Death Certificate Validation").
@@ -191,28 +194,28 @@ MySQL / MariaDB Server
 Installation Steps
 Clone the repository:
 
-Bash
+# Bash
 
 https://github.com/ArmieJoy/Advanced-Local-Civil-Registration-Information-System.git
 
 cd Advanced-Local-Civil-Registration-Information-System
 Install backend dependencies:
 
-Bash
+# Bash
 composer install
 Install frontend dependencies (including Chart.js):
 
-Bash
+# Bash
 npm install
 npm install chart.js vue-chartjs
 Environment configuration:
 
-Bash
+# Bash
 cp .env.example .env
 php artisan key:generate
 Configure database variables in .env:
 
-Code snippet
+# Code snippet
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -222,14 +225,14 @@ DB_PASSWORD=
 
 Run database migrations and seeders:
 
-Bash
+# Bash
 php artisan migrate --seed
 Start local development servers:
 
-Bash
+# Bash
 
-Terminal 1: Backend
+# Terminal 1: Backend
 php artisan serve
 
-Terminal 2: Vite Frontend
+# Terminal 2: Vite Frontend
 npm run dev
