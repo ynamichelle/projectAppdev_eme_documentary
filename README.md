@@ -193,6 +193,7 @@ Clone the repository:
 
 Bash
 https://github.com/ArmieJoy/Advanced-Local-Civil-Registration-Information-System.git
+
 cd Advanced-Local-Civil-Registration-Information-System
 Install backend dependencies:
 
