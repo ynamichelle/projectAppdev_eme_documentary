@@ -192,6 +192,7 @@ Installation Steps
 Clone the repository:
 
 Bash
+
 https://github.com/ArmieJoy/Advanced-Local-Civil-Registration-Information-System.git
 
 cd Advanced-Local-Civil-Registration-Information-System
@@ -213,15 +214,10 @@ Configure database variables in .env:
 
 Code snippet
 DB_CONNECTION=mysql
-
 DB_HOST=127.0.0.1
-
 DB_PORT=3306
-
 DB_DATABASE=alcris_db
-
 DB_USERNAME=root
-
 DB_PASSWORD=
 
 Run database migrations and seeders:
